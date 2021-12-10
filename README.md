@@ -1,3 +1,3 @@
-# await_promise
+# upcast
 
-https://pparocza.github.io/await_promise/
+https://pparocza.github.io/upcast/
