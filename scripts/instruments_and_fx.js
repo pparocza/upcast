@@ -1482,9 +1482,6 @@ PercussionPresets.prototype = {
 		this.b1.normalize(-1, 1);
 
 		this.startArray = [this.b1];
-
-		bufferGraph(this.b1.buffer);
-
 	},
 
 	// preset 19
@@ -1520,9 +1517,6 @@ PercussionPresets.prototype = {
 		this.b1.normalize(-1, 1);
 
 		this.startArray = [this.b1];
-
-		bufferGraph(this.b1.buffer);
-
 	},
 
 	// preset 20
@@ -1558,9 +1552,6 @@ PercussionPresets.prototype = {
 		this.b1.normalize(-1, 1);
 
 		this.startArray = [this.b1];
-
-		bufferGraph(this.b1.buffer);
-
 	},
 
 	// preset 21
@@ -1602,9 +1593,6 @@ PercussionPresets.prototype = {
 		this.b1.normalize(-1, 1);
 
 		this.startArray = [this.b1];
-
-		bufferGraph(this.b1.buffer);
-
 	},
 
 	// preset 22
@@ -1648,9 +1636,6 @@ PercussionPresets.prototype = {
 		this.b1.normalize(-1, 1);
 
 		this.startArray = [this.b1];
-
-		bufferGraph(this.b1.buffer);
-
 	},
 
 	// preset23
@@ -1692,9 +1677,6 @@ PercussionPresets.prototype = {
 		this.b1.normalize(-1, 1);
 
 		this.startArray = [this.b1];
-
-		bufferGraph(this.b1.buffer);
-
 	},
 
 	// preset24 (whisper shake)
@@ -1725,9 +1707,6 @@ PercussionPresets.prototype = {
 
 
 		this.startArray = [this.b1];
-
-		bufferGraph(this.b1.buffer);
-
 	},
 
 	// preset 25 (block)
@@ -1758,9 +1737,6 @@ PercussionPresets.prototype = {
 
 
 		this.startArray = [this.b1];
-
-		bufferGraph(this.b1.buffer);
-
 	},
 
 	// preset 26 (hi tuned tom)
@@ -1791,9 +1767,6 @@ PercussionPresets.prototype = {
 
 
 		this.startArray = [this.b1];
-
-		bufferGraph(this.b1.buffer);
-
 	},
 
 	// preset 27 (muted layer)
@@ -1824,9 +1797,6 @@ PercussionPresets.prototype = {
 
 
 		this.startArray = [this.b1];
-
-		bufferGraph(this.b1.buffer);
-
 	},
 
 	// preset 28 (reso click)
@@ -1857,9 +1827,6 @@ PercussionPresets.prototype = {
 
 
 		this.startArray = [this.b1];
-
-		bufferGraph(this.b1.buffer);
-
 	},
 
 	// preset 29 (formant click);
@@ -1894,9 +1861,6 @@ PercussionPresets.prototype = {
 
 
 			this.startArray = [this.b1];
-
-			bufferGraph(this.b1.buffer);
-
 		},
 
 	// perc 30 (sticks)
@@ -1931,9 +1895,6 @@ PercussionPresets.prototype = {
 
 
 		this.startArray = [this.b1];
-
-		bufferGraph(this.b1.buffer);
-
 	},
 
 	// preset 31
@@ -1968,9 +1929,6 @@ PercussionPresets.prototype = {
 
 
 			this.startArray = [this.b1];
-
-			bufferGraph(this.b1.buffer);
-
 		},
 
 	// preset 32
@@ -2005,9 +1963,6 @@ PercussionPresets.prototype = {
 
 
 		this.startArray = [this.b1];
-
-		bufferGraph(this.b1.buffer);
-
 	},
 
 	// preset 33
@@ -2042,9 +1997,6 @@ PercussionPresets.prototype = {
 
 
 			this.startArray = [this.b1];
-
-			bufferGraph(this.b1.buffer);
-
 		},
 
 	// preset 34 (reso tom)
@@ -2087,9 +2039,6 @@ PercussionPresets.prototype = {
 		this.b1.connect(this.output);
 
 		this.startArray = [this.b1];
-
-		bufferGraph(this.b1.buffer);
-
 	},
 
 	// preset 35 (knife tom)
@@ -2127,9 +2076,6 @@ PercussionPresets.prototype = {
 		this.b1.connect(this.output);
 
 		this.startArray = [this.b1];
-
-		bufferGraph(this.b1.buffer);
-
 	},
 
 	// preset 36 (formant block)
@@ -2167,9 +2113,6 @@ PercussionPresets.prototype = {
 		this.b1.connect(this.output);
 
 		this.startArray = [this.b1];
-
-		bufferGraph(this.b1.buffer);
-
 	},
 
 	// preset 37 (fm shape kick)
@@ -2303,8 +2246,6 @@ PercussionPresets.prototype = {
 		this.s1.makeFm(200, 10, 1);
 		this.s1G = new MyGain(0.2);
 
-		bufferGraph(this.bPE.buffer);
-
 		// CONNECTIONS
 
 		this.bPE.connect(this.f);
@@ -2332,8 +2273,6 @@ PercussionPresets.prototype = {
 		this.s1 = new MyWaveShaper();
 		this.s1.makeFm(200, 10, 1);
 		this.s1G = new MyGain(0.2);
-
-		bufferGraph(this.bPE.buffer);
 
 		// CONNECTIONS
 
@@ -2363,7 +2302,7 @@ PercussionPresets.prototype = {
 		this.s1.makeFm(200, 10, 1);
 		this.s1G = new MyGain(0.2);
 
-		bufferGraph(this.bPE.buffer);
+
 
 		// CONNECTIONS
 
@@ -2461,8 +2400,6 @@ PercussionPresets.prototype = {
 
 		this.p = new MyPanner2(0);
 
-		bufferGraph(this.bPE.buffer);
-
 		this.bPE.connect(this.w);
 		this.w.connect(this.d);
 		this.d.connect(this.p);
@@ -2490,8 +2427,6 @@ PercussionPresets.prototype = {
 		this.d = new MyStereoDelay(0.02417677268385887, 0.025461271405220032, randomFloat(0, 0.1), 1);
 
 		this.p = new MyPanner2(0);
-
-		bufferGraph(this.bPE.buffer);
 
 		this.bPE.connect(this.d);
 		this.d.connect(this.p);
@@ -2538,8 +2473,6 @@ PercussionPresets.prototype = {
 		this.b1.connect(this.d);
 		this.d.connect(this.p);
 		this.p.connect(this.output);
-
-		bufferGraph(this.b1.buffer);
 
 		this.startArray = [this.b1];
 
@@ -2618,9 +2551,6 @@ PercussionPresets.prototype = {
 		this.d.connect(this.output);
 
 		this.startArray = [this.b1];
-
-		bufferGraph(this.b1.buffer);
-
 	},
 
 	// preset 51 (blip)
@@ -2637,9 +2567,6 @@ PercussionPresets.prototype = {
 		this.f.connect(this.output);
 
 		this.startArray = [this.b1];
-
-		bufferGraph(this.b1.buffer);
-
 	},
 
 	// preset 52 (shape blip)
@@ -3988,8 +3915,6 @@ PitchedPresets.prototype = {
 
 		this.startArray = [this.b1];
 
-		bufferGraph(this.b1.buffer);
-
 		console.log("pitched preset 7");
 
 	},
@@ -4164,8 +4089,6 @@ PitchedPresets.prototype = {
 
 		this.b1.connect(this.output);
 
-		bufferGraph(this.b1.buffer);
-
 		this.startArray = [this.b1];
 
 		console.log("pitched preset 12");
@@ -4207,8 +4130,6 @@ PitchedPresets.prototype = {
 		this.b1.addBuffer(this.b2.buffer);
 
 		this.b1.connect(this.output);
-
-		bufferGraph(this.b1.buffer);
 
 		this.startArray = [this.b1];
 
@@ -4256,8 +4177,6 @@ PitchedPresets.prototype = {
 		this.b1.normalize(-1, 1);
 
 		this.b1.connect(this.output);
-
-		bufferGraph(this.b1.buffer);
 
 		this.startArray = [this.b1];
 
@@ -4314,8 +4233,6 @@ PitchedPresets.prototype = {
 
 		this.b1.connect(this.output);
 
-		bufferGraph(this.b1.buffer);
-
 		this.startArray = [this.b1];
 
 		console.log("pitched preset 14");
@@ -4371,8 +4288,6 @@ PitchedPresets.prototype = {
 
 		this.b1.connect(this.output);
 
-		bufferGraph(this.b1.buffer);
-
 		this.startArray = [this.b1];
 
 		console.log("pitched preset 16");
@@ -4410,7 +4325,7 @@ PitchedPresets.prototype = {
 
 		this.startArray = [this.b1];
 
-		bufferGraph(this.b1.buffer);
+		
 
 		console.log("pitched preset 17");
 
@@ -4446,8 +4361,6 @@ PitchedPresets.prototype = {
 		this.b1.connect(this.output);
 
 		this.startArray = [this.b1];
-
-		bufferGraph(this.b1.buffer);
 
 		console.log("pitched preset 18");
 
@@ -4494,7 +4407,7 @@ PitchedPresets.prototype = {
 
 		this.startArray = [this.b1];
 
-		bufferGraph(this.b1.buffer);
+		
 
 	},
 
@@ -4530,8 +4443,6 @@ PitchedPresets.prototype = {
 		this.b1.connect(this.output);
 
 		this.startArray = [this.b1];
-
-		bufferGraph(this.b1.buffer);
 
 	},
 
@@ -4573,7 +4484,7 @@ PitchedPresets.prototype = {
 
 		this.startArray = [this.b1];
 
-		bufferGraph(this.b1.buffer);
+		
 
 	},
 
@@ -4615,7 +4526,7 @@ PitchedPresets.prototype = {
 
 		this.startArray = [this.b1];
 
-		bufferGraph(this.b1.buffer);
+		
 
 	},
 
@@ -4652,7 +4563,7 @@ PitchedPresets.prototype = {
 
 			this.startArray = [this.b1];
 
-			bufferGraph(this.b1.buffer);
+			
 
 		},
 
@@ -4690,7 +4601,7 @@ PitchedPresets.prototype = {
 
 		this.startArray = [this.b1];
 
-		bufferGraph(this.b1.buffer);
+		
 
 	},
 
@@ -4729,7 +4640,7 @@ PitchedPresets.prototype = {
 
 			this.startArray = [this.b1];
 
-			bufferGraph(this.b1.buffer);
+			
 
 		},
 
@@ -4768,7 +4679,7 @@ PitchedPresets.prototype = {
 
 		this.startArray = [this.b1];
 
-		bufferGraph(this.b1.buffer);
+		
 
 	},
 
@@ -4807,7 +4718,7 @@ PitchedPresets.prototype = {
 
 			this.startArray = [this.b1];
 
-			bufferGraph(this.b1.buffer);
+			
 
 		},
 
@@ -4846,7 +4757,7 @@ PitchedPresets.prototype = {
 
 		this.startArray = [this.b1];
 
-		bufferGraph(this.b1.buffer);
+		
 
 	},
 
@@ -4885,7 +4796,7 @@ PitchedPresets.prototype = {
 
 		this.startArray = [this.b1];
 
-		bufferGraph(this.b1.buffer);
+		
 
 	},
 
@@ -5016,7 +4927,7 @@ PitchedPresets.prototype = {
 
 		this.startArray = [this.b1];
 
-		bufferGraph(this.b1.buffer);
+		
 
 	},
 
@@ -5060,7 +4971,7 @@ PitchedPresets.prototype = {
 
 		this.startArray = [this.b1];
 
-		bufferGraph(this.b1.buffer);
+		
 
 	},
 
@@ -5102,7 +5013,7 @@ PitchedPresets.prototype = {
 
 		this.startArray = [this.b1];
 
-		bufferGraph(this.b1.buffer);
+		
 
 	},
 
@@ -5145,7 +5056,7 @@ PitchedPresets.prototype = {
 
 		this.startArray = [this.b1];
 
-		bufferGraph(this.b1.buffer);
+		
 
 	},
 
@@ -5189,7 +5100,7 @@ PitchedPresets.prototype = {
 
 			this.startArray = [this.b1];
 
-			bufferGraph(this.b1.buffer);
+			
 
 		},
 
@@ -5247,7 +5158,7 @@ PitchedPresets.prototype = {
 
 		this.startArray = [this.b1];
 
-		bufferGraph(this.b1.buffer);
+		
 
 	},
 
@@ -5286,7 +5197,7 @@ PitchedPresets.prototype = {
 
 		this.startArray = [this.b1];
 
-		bufferGraph(this.b1.buffer);
+		
 
 	},
 
@@ -5326,7 +5237,7 @@ PitchedPresets.prototype = {
 
 		this.startArray = [this.b1];
 
-		bufferGraph(this.b1.buffer);
+		
 
 	},
 
@@ -5366,7 +5277,7 @@ PitchedPresets.prototype = {
 
 		this.startArray = [this.b1];
 
-		bufferGraph(this.b1.buffer);
+		
 
 	},
 
@@ -5430,7 +5341,7 @@ PitchedPresets.prototype = {
 
 		this.startArray = [this.b1];
 
-		bufferGraph(this.b1.buffer);
+		
 
 	},
 
@@ -5463,7 +5374,7 @@ PitchedPresets.prototype = {
 
 		this.startArray = [this.b1];
 
-		bufferGraph(this.b1.buffer);
+		
 
 	},
 
@@ -5496,7 +5407,7 @@ PitchedPresets.prototype = {
 
 		this.startArray = [this.b1];
 
-		bufferGraph(this.b1.buffer);
+		
 
 	},
 
@@ -5536,7 +5447,7 @@ PitchedPresets.prototype = {
 
 		this.startArray = [this.b1];
 
-		bufferGraph(this.b1.buffer);
+		
 
 	},
 
@@ -5676,7 +5587,7 @@ PitchedPresets.prototype = {
 
 		this.startArray = [this.eB];
 
-		bufferGraph(this.b1.buffer);
+		
 
 	},
 
@@ -5730,7 +5641,7 @@ PitchedPresets.prototype = {
 
 		this.startArray = [this.eB];
 
-		bufferGraph(this.b1.buffer);
+		
 
 	},
 
@@ -6019,7 +5930,7 @@ PitchedPresets.prototype = {
 		this.bPE.makeRamp(0, 1, 0.01, 0.0125, 0.5, 30);
 		this.bPE.playbackRate = 1;
 
-		bufferGraph(this.bPE.buffer);
+
 
 		this.s1 = new MyWaveShaper();
 		this.s1.makeFm(107, 20, 1);
@@ -6110,7 +6021,7 @@ PitchedPresets.prototype = {
 		this.s1.makeFm(400, 10, 1);
 		this.s1G = new MyGain(0.1);
 
-		bufferGraph(this.bPE.buffer);
+
 
 		// CONNECTIONS
 
@@ -6143,7 +6054,7 @@ PitchedPresets.prototype = {
 		this.s1.makeFm(100, 10, 1);
 		this.s1G = new MyGain(0.1);
 
-		bufferGraph(this.bPE.buffer);
+
 
 		// CONNECTIONS
 
@@ -6176,7 +6087,7 @@ PitchedPresets.prototype = {
 		this.s1.makeFm(200, 13, 1);
 		this.s1G = new MyGain(0.1);
 
-		bufferGraph(this.bPE.buffer);
+
 
 		// CONNECTIONS
 
@@ -6209,7 +6120,7 @@ PitchedPresets.prototype = {
 		this.s1.makeFm(500, 13, 1);
 		this.s1G = new MyGain(0.05);
 
-		bufferGraph(this.bPE.buffer);
+
 
 		// CONNECTIONS
 
@@ -6242,7 +6153,7 @@ PitchedPresets.prototype = {
 		this.s1.makeFm(1000, 13.2, 1);
 		this.s1G = new MyGain(0.0125);
 
-		bufferGraph(this.bPE.buffer);
+
 
 		// CONNECTIONS
 
@@ -6284,7 +6195,7 @@ PitchedPresets.prototype = {
 		this.s1.makeFm(1000, 13.2, 1);
 		this.s1G = new MyGain(0.0125);
 
-		bufferGraph(this.bPE.buffer);
+
 
 		// CONNECTIONS
 
@@ -6584,7 +6495,7 @@ PitchedPresets.prototype = {
 
 		this.p = new MyPanner2(0);
 
-		bufferGraph(this.bPE.buffer);
+
 
 		this.bPE.connect(this.w);
 		this.w.connect(this.d);
@@ -6623,7 +6534,7 @@ PitchedPresets.prototype = {
 
 		this.p = new MyPanner2(0);
 
-		bufferGraph(this.bPE.buffer);
+
 
 		this.bPE.connect(this.w);
 		this.w.connect(this.d);
@@ -7537,7 +7448,7 @@ FXPresets.prototype = {
 
 		this.startArray = [this.b1];
 
-		bufferGraph(this.b1.buffer);
+		
 
 		console.log("fx preset 13");
 
@@ -7946,7 +7857,7 @@ FXPresets.prototype = {
 		this.b2.makeFm(432*2, 432, 1);
 		this.b2.applyRamp(0, 0.75, 0.25, 0.5, 1, 1);
 
-		bufferGraph(this.b2.buffer);
+
 
 		this.b1.subtractBuffer(this.b2.buffer);
 
@@ -7954,13 +7865,13 @@ FXPresets.prototype = {
 		this.b2.applyRamp(0, 1, 0.5, 0.5, 1, 1);
 		this.b2.multiply(0.1);
 
-		bufferGraph(this.b2.buffer);
+
 
 		this.b1.multiplyBuffer(this.b2.buffer);
 
 		this.b1.normalize(-1, 1);
 
-		bufferGraph(this.b1.buffer);
+		
 
 		this.b1.connect(this.output);
 
@@ -7991,7 +7902,7 @@ FXPresets.prototype = {
 		this.b2.makeFm(this.fund*2, this.fund, 1);
 		this.b2.applyRamp(0, 0.75, 0.25, 0.5, 1, 1);
 
-		bufferGraph(this.b2.buffer);
+
 
 		this.b1.subtractBuffer(this.b2.buffer);
 
@@ -7999,13 +7910,13 @@ FXPresets.prototype = {
 		this.b2.applyRamp(0, 1, 0.5, 0.5, 1, 1);
 		this.b2.multiply(0.1);
 
-		bufferGraph(this.b2.buffer);
+
 
 		this.b1.multiplyBuffer(this.b2.buffer);
 
 		this.b1.normalize(-1, 1);
 
-		bufferGraph(this.b1.buffer);
+		
 
 		this.b1.connect(this.output);
 
@@ -8036,7 +7947,7 @@ FXPresets.prototype = {
 		this.b2.makeFm(this.fund*2, this.fund, 1);
 		this.b2.applyRamp(0, 1, 0.25, 0.5, 1, 1);
 
-		bufferGraph(this.b2.buffer);
+
 
 		this.b1.subtractBuffer(this.b2.buffer);
 
@@ -8044,13 +7955,13 @@ FXPresets.prototype = {
 		this.b2.applyRamp(0, 1, 0.5, 0.5, 1, 1);
 		this.b2.multiply(0.1);
 
-		bufferGraph(this.b2.buffer);
+
 
 		this.b1.multiplyBuffer(this.b2.buffer);
 
 		this.b1.normalize(-1, 1);
 
-		bufferGraph(this.b1.buffer);
+		
 
 		this.b1.connect(this.output);
 
@@ -8092,7 +8003,7 @@ FXPresets.prototype = {
 
 		this.startArray = [this.b1];
 
-		bufferGraph(this.b1.buffer);
+		
 
 	},
 
@@ -8130,7 +8041,7 @@ FXPresets.prototype = {
 
 		this.startArray = [this.b1];
 
-		bufferGraph(this.b1.buffer);
+		
 
 	},
 
@@ -8176,7 +8087,7 @@ FXPresets.prototype = {
 
 		this.startArray = [this.b1];
 
-		bufferGraph(this.b1.buffer);
+		
 
 	},
 
@@ -8220,7 +8131,7 @@ FXPresets.prototype = {
 
 		this.startArray = [this.b1];
 
-		bufferGraph(this.b1.buffer);
+		
 
 	},
 
@@ -8264,7 +8175,7 @@ FXPresets.prototype = {
 
 		this.startArray = [this.b1];
 
-		bufferGraph(this.b1.buffer);
+		
 
 	},
 
@@ -8308,7 +8219,7 @@ FXPresets.prototype = {
 
 		this.startArray = [this.b1];
 
-		bufferGraph(this.b1.buffer);
+		
 
 	},
 
@@ -8352,7 +8263,7 @@ FXPresets.prototype = {
 
 		this.startArray = [this.b1];
 
-		bufferGraph(this.b1.buffer);
+		
 
 	},
 
@@ -8396,7 +8307,7 @@ FXPresets.prototype = {
 
 		this.startArray = [this.b1];
 
-		bufferGraph(this.b1.buffer);
+		
 
 	},
 
@@ -8420,7 +8331,7 @@ FXPresets.prototype = {
 			this.b2.makeAm(this.fund*randomArrayValue([1, M2, M3, P4, P5, M6, m7]), this.fund*randomArrayValue([1, M2, M3, P4, P5, M6, m7]), 1);
 			this.b2.applyRamp(i/this.n, (i+1)/this.n, 0.25, 0.75, 1, 1);
 
-			bufferGraph(this.b2.buffer);
+	
 
 			this.b1.subtractBuffer(this.b2.buffer);
 
@@ -8434,7 +8345,7 @@ FXPresets.prototype = {
 
 		this.startArray = [this.b1];
 
-		bufferGraph(this.b1.buffer);
+		
 
 	},
 
@@ -8470,7 +8381,7 @@ FXPresets.prototype = {
 
 		this.startArray = [this.b1];
 
-		bufferGraph(this.b1.buffer);
+		
 
 	},
 
@@ -8506,7 +8417,7 @@ FXPresets.prototype = {
 
 		this.startArray = [this.b1];
 
-		bufferGraph(this.b1.buffer);
+		
 
 	},
 
@@ -8543,7 +8454,7 @@ FXPresets.prototype = {
 
 			this.startArray = [this.b1];
 
-			bufferGraph(this.b1.buffer);
+			
 
 		},
 
@@ -8579,7 +8490,7 @@ FXPresets.prototype = {
 
 		this.startArray = [this.b1];
 
-		bufferGraph(this.b1.buffer);
+		
 
 	},
 
@@ -8616,7 +8527,7 @@ FXPresets.prototype = {
 
 		this.startArray = [this.b1];
 
-		bufferGraph(this.b1.buffer);
+		
 
 	},
 
@@ -8655,8 +8566,6 @@ FXPresets.prototype = {
 		this.b1.connect(this.output);
 
 		this.startArray = [this.b1];
-
-		bufferGraph(this.b1.buffer);
 
 	},
 
@@ -8701,14 +8610,14 @@ FXPresets.prototype = {
 
 		this.b1.normalize(-1, 1);
 
-		bufferGraph(this.b1.buffer);
+		
 
 		this.b1.movingAverage(Math.pow(2, 8));
 		// this.b1.movingAverage(Math.pow(2, 11));
 
 		this.b1.normalize(-1, 1);
 
-		bufferGraph(this.b1.buffer);
+		
 
 		this.eB = new MyBuffer(1, 1, audioCtx.sampleRate);
 		this.eG = new MyGain(0);

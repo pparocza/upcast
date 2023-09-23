@@ -219,8 +219,6 @@ class Piece {
         const bufferLength = 2;
         const gainVal = 0.5;
 
-        console.log( 'fund: ' , fund );
-
         const iArray = iArray3;
 
         this.rC3 = new RampingConvolver( this );
@@ -419,15 +417,6 @@ class RampingConvolver extends Piece{
 
             this.nFCG2.connect( this.p3 );
             this.p3.connect( this.pOG );
-
-
-        // CONSOLE LOGS
-
-            console.log( 'impulse buffer: ' );
-            bufferGraph( this.iB.buffer );
-            console.log( 'noise oscillator buffer: ' );
-            bufferGraph( this.nO.buffer );
-
     }
 
     startInverse( startTime , stopTime ){
@@ -567,10 +556,6 @@ class AMConvolver extends Piece{
         this.ls.connect( c );
         c.connect( this.hp2 );
         this.hp2.connect( this.output );
-
-        console.log( 'convolver buffer: ');
-        bufferGraph( c.buffer );
-
     }
 
     createTapBuffer( tapDivs , playbackRate ){
@@ -609,10 +594,6 @@ class AMConvolver extends Piece{
             this.tapBuffer.bufferShape2( this.tapAddBuffer.buffer ).insert2( 0 , ( i / this.tapDivs ) , ( i + 1 ) / ( this.tapDivs ) );
 
         }
-
-        console.log( 'tap buffer: ' );
-        bufferGraph( this.tapBuffer.buffer );
-
     }
 
     start( startTime , stopTime ){
